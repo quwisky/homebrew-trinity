@@ -1,6 +1,6 @@
 cask "trinity@next" do
-  version "0.3.0-next.2"
-  sha256 "2866b5ffc936b1e9a990744542da177662e8d82442fd67dc21770a4cab75ae2d"
+  version "0.3.0-next.3"
+  sha256 "f83ee3321d632afc64901a1049f5e897047a1ea7ddca6b61c77ce2da89d5922d"
 
   url "https://github.com/quwisky/trinity-matrix-client/releases/download/v#{version}/Trinity-#{version}-arm64-mac.zip"
   name "Trinity (next)"
