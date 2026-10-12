@@ -1,6 +1,6 @@
 cask "trinity" do
-  version "0.3.0"
-  sha256 "8ec3e3114c213646fea36fc1718a73aa41be0ead07ff4255a3e2e9555da53765"
+  version "0.4.0"
+  sha256 "b0971e3031128d51450eb3464ebc6366d470891c6c25701d346cf6740feff939"
 
   url "https://github.com/quwisky/trinity-matrix-client/releases/download/v#{version}/Trinity-#{version}-arm64-mac.zip"
   name "Trinity"
@@ -20,7 +20,7 @@ cask "trinity" do
 
   zap trash: [
     "~/Library/Application Support/Trinity",
-    "~/Library/Preferences/eu.qwky.trinity.plist",
-    "~/Library/Saved Application State/eu.qwky.trinity.savedState",
+    "~/Library/Preferences/dev.trinityproject.trinity.plist",
+    "~/Library/Saved Application State/dev.trinityproject.trinity.savedState",
   ]
 end
