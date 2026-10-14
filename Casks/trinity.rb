@@ -12,7 +12,6 @@ cask "trinity" do
     strategy :github_latest
   end
 
-  conflicts_with cask: "trinity@next"
   depends_on arch: :arm64
   depends_on macos: :ventura
 
@@ -20,6 +19,8 @@ cask "trinity" do
 
   zap trash: [
     "~/Library/Application Support/Trinity",
+    "~/Library/Caches/dev.trinityproject.trinity",
+    "~/Library/Logs/Trinity",
     "~/Library/Preferences/dev.trinityproject.trinity.plist",
     "~/Library/Saved Application State/dev.trinityproject.trinity.savedState",
   ]
