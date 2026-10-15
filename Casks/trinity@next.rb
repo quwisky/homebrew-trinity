@@ -1,9 +1,9 @@
 cask "trinity@next" do
-  version "0.5.0-next.0"
-  sha256 "423989d182ad27cd8c1e0158e8806e2bed7f13c39b6b404ca66c64cec31df6de"
+  version "0.5.0-next.1"
+  sha256 "015402ebf2b300e1c6e152a56320daf7001ae9b7ccf7124c7fa8523f01dd4761"
 
   url "https://github.com/quwisky/trinity-matrix-client/releases/download/v#{version}/Trinity-#{version}-arm64-mac.zip"
-  name "Trinity (next)"
+  name "Trinity Next"
   desc "End-to-end encrypted Matrix client"
   homepage "https://github.com/quwisky/trinity-matrix-client"
 
@@ -13,15 +13,16 @@ cask "trinity@next" do
     strategy :git
   end
 
-  conflicts_with cask: "trinity"
   depends_on arch: :arm64
   depends_on macos: :ventura
 
-  app "Trinity.app"
+  app "Trinity Next.app"
 
   zap trash: [
-    "~/Library/Application Support/Trinity",
-    "~/Library/Preferences/dev.trinityproject.trinity.plist",
-    "~/Library/Saved Application State/dev.trinityproject.trinity.savedState",
+    "~/Library/Application Support/Trinity Next",
+    "~/Library/Caches/dev.trinityproject.trinity.next",
+    "~/Library/Logs/Trinity Next",
+    "~/Library/Preferences/dev.trinityproject.trinity.next.plist",
+    "~/Library/Saved Application State/dev.trinityproject.trinity.next.savedState",
   ]
 end
