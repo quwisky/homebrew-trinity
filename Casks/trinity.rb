@@ -1,6 +1,6 @@
 cask "trinity" do
-  version "0.6.0"
-  sha256 "9d994f26a38a5b03f8cb10ba9f585893e95562e6c8caa09bd9c599688ccead63"
+  version "0.7.0"
+  sha256 "ee81d028933a7358edf359eb879b38b319584888258ca4b8f06e06db74abf945"
 
   url "https://github.com/quwisky/trinity-matrix-client/releases/download/v#{version}/Trinity-#{version}-arm64-mac.zip"
   name "Trinity"
